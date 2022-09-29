@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario2</title>
+</head>
+<body>
+    <form action="Resultados_Formulario2.php" method="post">
+        <ul>
+         <li>
+           <label for="nombre">Nombre Producto:</label>
+           <input type="text" id="name" name="name">
+         </li>
+         <li>
+            <label for="descripcion">Descripción Producto:</label>
+            <input type="text" id="description" name="description">
+          </li>
+         <li>
+           <label for="tipo">Tipo</label>
+           <input type="text" multiple name="type" id="tipos" name="type" list="listatipos">
+         </li>
+         <li>
+           <label for="precio">Precio:</label>
+           <input type="price" name="price"></textarea>
+         </li>
+         <input type="submit">
+         <a href="\Recursos_Xampp\test.php">Atras</a>
+        </ul> 
+       </form>
+
+       <datalist id="listatipos">
+        <option value="consumibles"></option>
+        <option value="tecnología"></option>
+        <option value="belleza"></option>
+        <option value="otros"></option>
+       </datalist>
+
+</body>
+</html>
